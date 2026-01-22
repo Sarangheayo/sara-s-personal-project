@@ -4,7 +4,7 @@ my website
 # SARA.
 
 <div align="center">
-  <img src="https://via.placeholder.com/600x400/1a1a1a/ffffff?text=Visual+Structure" alt="Profile" width="100%">
+ <img src="./profile.png" alt="Profile" width="100%">
 </div>
 
 <br><br>
