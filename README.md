@@ -4,7 +4,7 @@ my website
 # SARA.
 
 <div align="center">
- <img src="./profile.png" alt="Profile" width="100%">
+ <img src="./profile.png" alt="Profile" width="10%">
 </div>
 
 <br><br>
