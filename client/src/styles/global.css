@@ -1,0 +1,47 @@
+:root {
+  --bg-color: #121212; /* Dark background */
+  --card-bg-color: #1E1E1E; /* Slightly lighter dark for cards */
+  --text-color: #E0E0E0; /* Light gray for body text */
+  --header-color: #FFFFFF; /* White for main headings */
+  --main-color: #8A2BE2; /* BlueViolet accent color */
+  --border-color: #333333; /* Subtle border for cards */
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+
+  --mobile-width: 375px;
+  --mobile-margin: 10px;
+  --transition-speed: 0.3s;
+  --border-radius: 8px; /* Rounded corners for modern look */
+
+  /* Modern Sans-serif Font Stack */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  line-height: 1.6;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--header-color);
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

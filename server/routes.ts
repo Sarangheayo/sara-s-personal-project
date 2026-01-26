@@ -2,6 +2,7 @@ import type { Express } from "express";
 import type { Server } from "http";
 import { storage } from "./storage";
 import { api } from "@shared/routes";
+import { skillsData } from '../client/src/data/skills'; // Import skillsData
 
 export async function registerRoutes(
   httpServer: Server,
@@ -75,6 +76,11 @@ export async function registerRoutes(
       return res.status(404).json({ message: "Photo not found" });
     }
     res.json(photo);
+  });
+
+  // New route for skills data
+  app.get(api.skills.list.path, (req, res) => {
+    res.json(skillsData);
   });
 
   return httpServer;

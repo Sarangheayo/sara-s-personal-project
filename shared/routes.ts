@@ -19,6 +19,21 @@ export const api = {
       },
     },
   },
+  skills: {
+    list: {
+      method: 'GET' as const,
+      path: '/api/skills',
+      responses: {
+        200: z.array(z.object({
+          category: z.string(),
+          skills: z.array(z.object({
+            name: z.string(),
+            description: z.string().optional(),
+          })),
+        })),
+      },
+    },
+  },
 };
 
 export function buildUrl(path: string, params?: Record<string, string | number>): string {
